@@ -87,15 +87,15 @@ useEffect(() => {
       <form className='my-4'>
   <div className="form-group">
     <label htmlFor="formGroupExampleInput">FullName</label>
-    <input onChange={(e)=> setFullName(e.target.value)} value={fullName} type="text" className="form-control" id="formGroupExampleInput" placeholder="Example input" />
+    <input onChange={(e)=> setFullName(e.target.value)} value={fullName} type="text" className="form-control" id="formGroupExampleInput" placeholder="Enter FullName" />
   </div>
   <div className="form-group">
     <label htmlFor="formGroupExampleInput2">State Code</label>
-    <input onChange={(e)=> setStateCode(e.target.value)}  value={stateCode} type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input" />
+    <input onChange={(e)=> setStateCode(e.target.value)}  value={stateCode} type="text" className="form-control" id="formGroupExampleInput2" placeholder="Enter Statecode" />
   </div>
   <div className="form-group">
     <label htmlFor="formGroupExampleInput2">Price</label>
-    <input onChange={(e)=> setAmountPay(e.target.value)} value={AmountPay}  type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input" />
+    <input onChange={(e)=> setAmountPay(e.target.value)} value={AmountPay}  type="text" className="form-control" id="formGroupExampleInput2" placeholder="Enter Amount" />
   </div>
   <button onClick={HandleSubmit} className='bg-success text-light my-3'>Submit</button>
 </form>
