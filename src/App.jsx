@@ -116,7 +116,7 @@ useEffect(() => {
             <tr key={items?._id}>
             <th scope="row">{index+1}</th>
             <td>{items?.fullName}</td>
-            <td>{items?.stateCode}</td>
+            <td>AN/23B/{items?.stateCode}</td>
             <td>{items?.AmountPay}</td>
             <td>{formattedDate}</td>
             <td>
