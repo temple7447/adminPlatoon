@@ -78,7 +78,7 @@ useEffect(() => {
 
   return (
     <div className="container-fluid"> {/* Use container-fluid class for full width */}
-      <h1>Platoon One Payment List</h1>
+      <h1>Platoon Four Payment List</h1>
       <form className='my-4'>
   <div className="form-group">
     <label htmlFor="formGroupExampleInput">FullName</label>
