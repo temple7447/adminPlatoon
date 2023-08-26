@@ -1,4 +1,5 @@
 import { useState , useEffect} from 'react';
+// import { useLocation, useHistory } from 'react-router';
 
 import './App.css';
 import axios from 'axios';
@@ -9,7 +10,11 @@ function App() {
  const [AmountPay,setAmountPay] = useState(' ')
  const [list, setList] = useState([])
  const [change, setChage] = useState(true)
- 
+
+//  const location = useLocation();
+//  const history = useHistory();
+
+
  const fetchData = () => {
   axios
     .get('https://charming-cod-gaiters.cyclic.app/Plantoon')
@@ -50,26 +55,26 @@ const HandleSubmit = (e)=>{
 
 
 
-const HandleDelete = (id)=>{
+const HandleDelete = (id) => {
 
-  try {
-    
-  axios.post("https://charming-cod-gaiters.cyclic.app/PlantoonDelete", {
-   id
-  })
-  .then((res)=>{
-    alert("It was successfully deleted");
-    console.log(res)
-    setChage(!change)
-    fetchData();
-  })
-  .catch((error)=>{
-    console.log(error)
-  })
-  } catch (error) {
-    console.log(error)
-  }
-}
+
+    axios
+      .post("https://charming-cod-gaiters.cyclic.app/PlantoonDelete", {
+        id,
+      })
+      .then((res) => {
+        console.log(res);
+        alert("It was successfully deleted");
+        // setChage(!change);
+        fetchData();
+        // window.location.reload();
+  
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+};
 
 useEffect(() => {
   fetchData(); // Fetch initial data
