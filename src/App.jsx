@@ -117,7 +117,7 @@ useEffect(() => {
             <th scope="row">{index+1}</th>
             <td>{items?.fullName}</td>
             <td>AN/23B/{items?.stateCode}</td>
-            <td>{items?.AmountPay}</td>
+            <td>&#x20A6;{items?.AmountPay}</td>
             <td>{formattedDate}</td>
             <td>
   <button
