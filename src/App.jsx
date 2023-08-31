@@ -17,20 +17,23 @@ function App() {
 
  const fetchData = () => {
   axios
-    .get('https://charming-cod-gaiters.cyclic.app/Plantoon')
+    .get('https://calm-lab-coat-colt.cyclic.app/Plantoon')
     .then((res) => {
       setList(res.data);
     })
     .catch((error) => {
       console.log(error);
     });
+
+
+  
 };
 
 const HandleSubmit = (e)=>{
   e.preventDefault();
   try {
     
-  axios.post("https://charming-cod-gaiters.cyclic.app/Plantoon", {
+  axios.post("https://calm-lab-coat-colt.cyclic.app/Plantoon", {
     fullName,stateCode,AmountPay
   })
   .then((res)=>{
@@ -59,7 +62,7 @@ const HandleDelete = (id) => {
 
 
     axios
-      .post("https://charming-cod-gaiters.cyclic.app/PlantoonDelete", {
+      .post("https://calm-lab-coat-colt.cyclic.app/PlantoonDelete", {
         id,
       })
       .then((res) => {
